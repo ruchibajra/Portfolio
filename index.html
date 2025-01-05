@@ -10,9 +10,19 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- hero section -->
@@ -40,11 +50,9 @@
           </div>
 
           <div class="header-img">
-            <img src="images/home.png" alt="">
+            <img src="images/home.png" alt="" />
           </div>
-
         </div>
-       
       </div>
     </div>
 
@@ -113,7 +121,7 @@
     <!-- services section -->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title title-center">My Services</h1>
         <div class="services-list">
           <div>
             <i class="fa-solid fa-code"></i>
@@ -154,13 +162,189 @@
       </div>
     </div>
 
-    <div id="portfolio"></div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title title-center">My Works</h1>
+        <div class="section-body">
+          <div class="filter">
+            <button class="filter-btn active" data-filter="*">All</button>
+            <button class="filter-btn" data-filter=".web">Web Dev</button>
+            <button class="filter-btn" data-filter=".mobile">Mobile App</button>
+            <button class="filter-btn" data-filter=".ui">UI Designs</button>
+            <button class="filter-btn" data-filter=".content">
+              Content Creation
+            </button>
+          </div>
+
+          <div class="grid">
+            <div class="grid-item work web content">
+              <div class="gallery-image">
+                <img src="./images/home_img1.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work mobile ui">
+              <div class="gallery-image">
+                <img src="./images/home_img3.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work web ui">
+              <div class="gallery-image">
+                <img src="./images/home_img2.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work mobile content">
+              <div class="gallery-image">
+                <img src="./images/home_img6.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work web">
+              <div class="gallery-image">
+                <img src="./images/home_img3.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work mobile">
+              <div class="gallery-image">
+                <img src="./images/home_img4.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work content">
+              <div class="gallery-image">
+                <img src="./images/home_img5.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work ui">
+              <div class="gallery-image">
+                <img src="./images/home_img6.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item work mobile web">
+              <div class="gallery-image">
+                <img src="./images/home_img3.jpg" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                    quidem obcaecati, optio eveniet nesciunt earum perspiciatis
+                    neque blanditiis maiores illum eius quia magnam tempora
+                    laborum accusamus dolor reiciendis eligendi consequatur!
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="more-portfolio">
+            <a href="#" class="btn"> More Folio</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- portfolio -->
     <!-- <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
+
           <div class="work">
             <img src="images/work-1.png" />
             <div class="layer">
@@ -176,6 +360,7 @@
               ></a>
             </div>
           </div>
+
           <div class="work">
             <img src="images/work-2.png" />
             <div class="layer">
@@ -243,16 +428,13 @@
                 placeholder="Your Message"
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
-            </form>  
+            </form>
             <span id="msg"></span>
           </div>
         </div>
       </div>
       <div class="copyright">
-        <p>
-          © 2024 Ruchi Bajracharya. All Rights Reserved.
-        </i>
-        </p>
+        <p>© 2024 Ruchi Bajracharya. All Rights Reserved.</p>
       </div>
     </div>
 
@@ -273,33 +455,36 @@
     </script>
 
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
 
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbypk-HLuuzhBx8LCb96Jb-mgeTz9u_xZ6zJCWLTwnGplF2ruAxrQedL_92L5wKSlB4pOg/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbypk-HLuuzhBx8LCb96Jb-mgeTz9u_xZ6zJCWLTwnGplF2ruAxrQedL_92L5wKSlB4pOg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-              msg.innerHTML = ""
-            },5000)
-            form.reset()
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
