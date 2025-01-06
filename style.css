@@ -28,8 +28,8 @@ html {
 
 .header-img {
   height: 70vh;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 2s ease-in-out forwards, floating 3s ease-in-out infinite;
+  /* opacity: 0; Initially hidden */
+  animation: fadeIn 2s ease-in-out forwards; /* Animation lasts 2 seconds */
 }
 .header-text p,
 h1 {
