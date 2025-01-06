@@ -17,11 +17,9 @@ html {
 #home {
   width: 100%;
   height: 100vh;
-  /* background-color: red; */
 }
 
 .header-contents {
-  /* background-color: yellow; */
   display: flex;
   align-items: center;
   margin-top: 100px;
@@ -30,36 +28,48 @@ html {
 
 .header-img {
   height: 70vh;
-
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 2s ease-in-out forwards, floating 3s ease-in-out infinite;
+}
+.header-text p,
+h1 {
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 2s ease-in-out forwards; /* Animation lasts 2 seconds */
 }
 
+/* Fade-in Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(20px); /* Optional: Move the text slightly upwards */
+  }
+  to {
+    opacity: 1; /* End fully visible */
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+
+/* Floating Effect */
 @keyframes floating {
   0% {
-    /* transform: translate(0, 0px); */
-    transform: translateY(0);
+    transform: translateY(0); /* transform: translate(0, 0px); */
   }
   50% {
-    /* transform: translate(0, 10px); */
-    transform: translateY(-1.3rem);
+    transform: translateY(-1.3rem); /* transform: translate(0, 10px); */
   }
   100% {
-    /* transform: translate(0, -0px); */
-    transform: translateY(0);
+    transform: translateY(0); /* transform: translate(0, -0px); */
   }
 }
+
 .header-img img {
-  /* background-color: pink; */
   height: 100%;
   width: 100%;
   background-size: cover;
 }
 
 .container {
-  padding: 10px 10%; /*topbottom leftright*/
+  padding: 10px 10%;
 }
 
 nav {
