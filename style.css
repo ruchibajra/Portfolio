@@ -29,7 +29,7 @@ html {
 .header-img {
   height: 70vh;
   /* opacity: 0; Initially hidden */
-  animation: fadeIn 2s ease-in-out forwards; /* Animation lasts 2 seconds */
+  animation: fadeIn 3s ease-in-out forwards, floating 3s ease-in-out infinite;
 }
 .header-text p,
 h1 {
@@ -41,7 +41,7 @@ h1 {
 @keyframes fadeIn {
   from {
     opacity: 0; /* Start fully transparent */
-    transform: translateY(20px); /* Optional: Move the text slightly upwards */
+    transform: translateY(20px); /*Move the text slightly upwards */
   }
   to {
     opacity: 1; /* End fully visible */
