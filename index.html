@@ -61,19 +61,53 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/aboutme_img.jpg" />
+            <!-- <img src="images/aboutme_img.jpg" /> -->
+
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/home_img1.jpg" style="width: 100%" />
+                <div class="text">Caption Text</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/home_img2.jpg" style="width: 100%" />
+                <div class="text">Caption Two</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/home_img3.jpg" style="width: 100%" />
+                <div class="text">Caption Three</div>
+              </div>
+            </div>
+            <br />
+
+            <div style="text-align: center">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-              obcaecati provident, molestias repellat aspernatur deleniti,
-              reiciendis temporibus ducimus maiores odit officia harum ut, non
-              tempore mollitia tenetur voluptates excepturi vero. Blanditiis
-              odio minima dolor iusto odit excepturi eum provident officia et
-              assumenda consequatur repellendus eius hic at, sint praesentium
-              expedita quasi eaque rem unde amet explicabo nihil possimus sit!
-              Consequuntur?
+              I’m Ruchi Bajracharya, a Computer Science student and an aspiring
+              front-end developer passionate about building user-friendly web
+              and mobile applications. I have keen interest in work with
+              technologies like HTML, CSS, JavaScript, React, and Flutter. A
+              fast learner with a detail-oriented approach, I believe in solving
+              problems with creative and efficient solutions while staying
+              committed to deadlines. <br />
+              <br />
+
+              In addition to coding, I bring my passion for badminton and
+              dancing into my life as a way to stay active, energetic and
+              balanced. I aspire to work on impactful projects that combine
+              technical innovation with seamless user experiences. Let’s connect
+              to discuss how I can contribute to your team with my technical
+              expertise and innovative mindset!
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -86,10 +120,83 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span> <br />Designing Web/App Interfaces</li>
-                <li><span>Web Development</span> <br />Web App Development</li>
                 <li>
-                  <span>App Development</span> <br />Building Android/iOS Apps
+                  <span>Frontend</span> <br />
+                  <div class="skill-list">
+                    <div class="skill-logo">
+                      <i class="fa-brands fa-html5"></i>
+                      <h5>HTML</h5>
+                    </div>
+
+                    <div class="skill-logo">
+                      <i class="fa-brands fa-css3-alt"></i>
+                      <h5>CSS</h5>
+                    </div>
+
+                    <div class="skill-logo">
+                      <i class="fa-brands fa-js"></i>
+                      <h5>JavaScript</h5>
+                    </div>
+
+                    <div class="skill-logo">
+                      <i class="fa-brands fa-react"></i>
+                      <h5>React Js</h5>
+                    </div>
+
+                    <div class="skill-logo">
+                      <img src="./images/tailwind-logo.png" alt="" />
+                      <h5>Tailwind CSS</h5>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span>Backend</span> <br />
+                  <div class="skill-list">
+                    <div class="skill-logo">
+                      <i class="fa-brands fa-java"></i>
+                      <h5>JAVA</h5>
+                    </div>
+
+                    <div class="skill-logo">
+                      <i class="fa-brands fa-python"></i>
+                      <h5>Python</h5>
+                    </div>
+
+                    <div class="skill-logo">
+                      <i class="fa-brands fa-git"></i>
+                    </div>
+
+                    <div class="skill-logo">
+                      <img src="./images/5.png" alt="" />
+                      <h5>Firebase</h5>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span>Other Skills</span> <br />
+
+                  <div class="skill-list">
+                    <div class="skill-logo">
+                      <img src="./images/1.png" alt="" />
+                      <h5>Trello</h5>
+                    </div>
+                    <div class="skill-logo">
+                      <img src="./images/2.png" alt="" />
+                      <h5>Figma</h5>
+                    </div>
+                    <div class="skill-logo">
+                      <img src="./images/3.png" alt="" />
+                      <h5>Github</h5>
+                    </div>
+                    <div class="skill-logo">
+                      <img src="./images/4.png" alt="" />
+                      <h5>Capcut</h5>
+                    </div>
+                    <div class="skill-logo">
+                      <img src="./images/6.png" alt="" />
+                      <h5>Canva</h5>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -482,6 +589,30 @@
         <p>© 2024 Ruchi Bajracharya. All Rights Reserved.</p>
       </div>
     </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
 
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
